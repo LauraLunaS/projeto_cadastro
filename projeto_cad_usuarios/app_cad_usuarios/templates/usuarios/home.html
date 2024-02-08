@@ -7,11 +7,12 @@
 </head>
 <body>
     <form action="{% url 'listagem_usuarios' %}" method="post">
+        {% csrf_token %}
         <h1 class="title">Cadastro de usuário</h1>
         <div class="ContainerBox">
             <div class="containerName">
                 <label class="label">Nome</label>
-                <input type="text" class="input" name="name"/>
+                <input type="text" class="input" name="nome"/>
             </div>
             <div class="containerIdade">
             <label class="label">Idade</label>
