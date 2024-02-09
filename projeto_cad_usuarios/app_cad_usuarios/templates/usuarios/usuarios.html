@@ -1,17 +1,28 @@
-<div class="container">
-    <table>
-        <tr>
-            <th>id</th>
-            <th>nome</th>
-            <th>idade</th>
-        </tr>
-        {% for usuario in usuarios %}
-        <tr>
-            <td>{{ usuario.id }}</td>
-            <td>{{ usuario.nome }}</td>
-            <td>{{ usuario.idade }}</td>
-        </tr>
-        {% endfor %}
-    </table>
-
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" type="text/css" href="../../static/usuarios.css" media="screen" />
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <tr>
+                <th>id</th>
+                <th>nome</th>
+                <th>idade</th>
+            </tr>
+            {% for usuario in usuarios %}
+            <tr>
+                <td>{{ usuario.id }}</td>
+                <td>{{ usuario.nome }}</td>
+                <td>{{ usuario.idade }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    
+    </div>
+</body>
+</html>
